@@ -2071,8 +2071,8 @@ class PHPBuilder implements Builder
         if ($this->frozen === true) {
             return;
         }
-
-        $this->frozen = true;
+ 
+        // $this->frozen = true;
 
         $this->frozenTraits     = $this->copyTypesWithPackage($this->traits);
         $this->frozenClasses    = $this->copyTypesWithPackage($this->classes);
